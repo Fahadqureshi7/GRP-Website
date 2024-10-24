@@ -15,7 +15,7 @@ const HomeContent = () => {
             GRP Engineers & Consultants    
           </h1> 
           <p className='text-sm sm:text-base md:text-lg leading-relaxed mt-4'>
-            <span className='font-semibold text-red-500'>Welcome To GRP Engineers & Consultants</span>, one of the leading suppliers of GRP (Glass Reinforced Plastic). We are a multidisciplinary engineering firm specializing in infrastructure development and consultancy services. 
+            <span className='font-semibold text-red-500'>Welcome To GRP Engineers & Consultants,</span> one of the leading suppliers of Fiber Glass Products. We are a multidisciplinary engineering firm specializing in infrastructure development and consultancy services. 
             <br className="hidden sm:block" /><br className="hidden sm:block" />
             Our solutions span various fields, including chemical, mechanical, and metallurgical engineering, backed by expertise in project management, structural analysis, and sustainable design. With our seasoned professionals, we deliver innovative, high-quality services to meet the needs of both public and private sector clients.
           </p>

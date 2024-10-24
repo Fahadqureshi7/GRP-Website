@@ -29,19 +29,35 @@ export const AboutContent = () => {
                 </div>
             </div>
             <div className='m-4 sm:m-8 md:m-14'>
-                <h2 className='text-lg md:text-xl font-medium mb-4'><i>We</i> are representing following Internationally renowned companies as their Sole Distributors for their entire range of products in Pakistan:</h2>
+                <h2 className='text-lg md:text-xl font-medium mb-4'><i>We</i> Deals in the following Products of the Internationally renowned companies :</h2>
                 <ul className="space-y-2 md:space-y-3 text-lg md:text-md">
-                    <li>1- <a href="https://www.georgfischer.com/"><span className='text-red-600 font-semibold hover:text-red-700'>Georg Fischer –</span></a> Switzerland for Quality Piping Systems.</li>
-                    <li>2- <a href="https://www.marchpump.com/">
-                    <span className='text-red-600 font-semibold hover:text-red-700'>March Manufacturing Inc –</span></a> USA for Sealless Magnetic Drive Pumps.</li>
-                    <li>3-<a href="https://www.graco.com/"><span className='text-red-600 font-semibold hover:text-red-700'>Graco Inc –</span></a> USA for Graco Husky AODD & Piston Pumps.</li>
-                    <li>4-<a href="https://www.jesspumpen.de/"><span className='text-red-600 font-semibold hover:text-red-700 '>Jessberger Pumps & Systems –</span> </a>Germany for Drum/Barrel pumps.</li>
-                    <li>5-<a href="https://www.psgdover.com/neptune"><span className='text-red-600 font-semibold hover:text-red-700'>Neptune Chemical Pump Co –</span></a> USA for Metering / Dosing Pumps.</li>
-                    <li>6-<a href="https://www.sodeca.com/"><span className='text-red-600 font-semibold hover:text-red-700'>Sodecca –</span></a>  Spain for Industrial Fans & Blowers.</li>
-                    <li>7-<a href="https://regalchlorinators.com/"><span className='text-red-600 font-semibold hover:text-red-700'>Regal Gas Chlorinators –</span></a> USA for Gas Chlorinators.</li>
-                    <li>8-<a href="https://diamant-polymer.de/"><span className='text-red-600 font-semibold hover:text-red-700'>Diamant GmbH –</span> </a>Germany for Cold Welding Materials.</li>
-                    <li>9-<a href="https://www.pekos.es/"><span className='text-red-600 font-semibold hover:text-red-700'>Pekos Industrial Valves –</span></a> Spain for Industrial Valves.</li>
-                    <li>10-<a href="https://www.safybox.com/en/"><span className='text-red-600 font-semibold hover:text-red-700'>Uriarte Safybox –</span> </a>Spain for insulated enclosures.</li>
+                    <li>1- 
+                        <span className='text-red-600 font-semibold hover:text-red-700'> Piping System</span> form <a href="https://www.georgfischer.com/"><span className='font-semibold'> George Fisher.</span></a></li>
+
+                        
+                    <li>2- <span className='text-red-600 font-semibold hover:text-red-700'> Magnetic Drive Pumps</span> from <a href="https://www.marchpump.com/"> <span className=' font-semibold '>March Manufacturing.</span></a>
+                    </li>
+                    
+                    
+                    <li>3-<span className='text-red-600 font-semibold hover:text-red-700'> AODD & Piston Pumps</span> from <a href="https://www.graco.com/"><span className=' font-semibold '>Graco Inc.</span></a> </li>
+                    
+                    
+                    <li>4-<span className='text-red-600 font-semibold hover:text-red-700 '> Drum/Barrel pumps</span> from <a href="https://www.jesspumpen.de/"><span className=' font-semibold '>Jessberger Pumps & Systems.</span></a></li>
+                    
+                    
+                    <li>5-<span className='text-red-600 font-semibold hover:text-red-700'> Metering / Dosing Pumps</span> from <a href="https://www.psgdover.com/neptune"><span className=' font-semibold '>Neptune Chemical Pump Co.</span></a></li>
+                    
+                    
+                    <li>6-<span className='text-red-600 font-semibold hover:text-red-700'> Industrial Fans & Blowers</span> from <a href="https://www.sodeca.com/"><span className=' font-semibold '>Sodecca.</span></a></li>
+                    
+                    
+                    <li>7-<span className='text-red-600 font-semibold hover:text-red-700'> Gas Chlorinators</span> from <a href="https://regalchlorinators.com/"><span className=' font-semibold '>Regal Gas Chlorinators.</span></a></li>
+
+                    <li>8-<span className='text-red-600 font-semibold hover:text-red-700'> Cold Welding Materials</span> from <a href="https://diamant-polymer.de/"><span className=' font-semibold '>Diamant GmbH.</span></a></li>
+
+                    <li>9-<span className='text-red-600 font-semibold hover:text-red-700'> Industrial Valves</span> from <a href="https://www.pekos.es/"><span className=' font-semibold '>Pekos Valves.</span></a></li>
+
+                    <li>10-<span className='text-red-600 font-semibold hover:text-red-700'> Insulated enclosures</span>  from <a href="https://www.safybox.com/en/"><span className=' font-semibold '>Uriarte Safybox.</span></a></li>
                 </ul>
             </div>
             <div className='relative py-6 md:py-10 bg-white'>
