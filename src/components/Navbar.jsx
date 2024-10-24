@@ -13,37 +13,31 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(null); // Only one submenu open at a time
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(null); 
 
-  // Timeout handler for delayed closing of dropdown
+
   let closeDropdownTimeout;
 
-  // Toggle the main dropdown menu
+
   const toggleDropdown = () => {
-    clearTimeout(closeDropdownTimeout); // Clear any timeout if hovering again
+    clearTimeout(closeDropdownTimeout); 
     setIsDropdownOpen((prev) => !prev);
   };
 
-  // Close dropdown with delay (for desktop hover behavior)
-  const closeDropdownWithDelay = () => {
-    closeDropdownTimeout = setTimeout(() => {
-      setIsDropdownOpen(false);
-    }, 2000);
-  };
 
-  // Toggle a specific submenu, closing others
+
   const toggleSubmenu = (menu) => {
     if (isSubmenuOpen === menu) {
-      setIsSubmenuOpen(null); // Close if already open
+      setIsSubmenuOpen(null); 
     } else {
-      setIsSubmenuOpen(menu); // Open this one and close others
+      setIsSubmenuOpen(menu); 
     }
   };
 
-  // Close the submenu on mouse leave
+
   const handleSubmenuLeave = () => {
-    setIsSubmenuOpen(null); // Close all submenus on mouse leave
-  };
+    setIsSubmenuOpen(null); 
+    };
 
   return (
     <nav className="bg-white shadow-md">
@@ -67,7 +61,7 @@ const Navbar = () => {
             <div className="text-gray-700 flex items-center text-sm">
               <EmailIcon className="mr-1 text-base" /> sale@grpengineers.com
             </div>
-            <div className="flex space-x-2 mt-2 sm:mt-0">
+            <div className="flex space-x-2 sm:mt-0">
               <a
                 href="https://www.facebook.com/grpengineers/"
                 target="_blank"
@@ -108,13 +102,12 @@ const Navbar = () => {
                   About Us
                 </Link>
               </li>
-
-              {/* Main Products Dropdown */}
               <li
                 className="relative"
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={
-                  closeDropdownWithDelay}
+                  () => setIsDropdownOpen(false)
+                }
               >
                 <Link to='/products'
                   className="text-gray-700 hover:text-red-500 focus:outline-none"
@@ -126,18 +119,17 @@ const Navbar = () => {
 
                 {/* Dropdown with submenus */}
                 {isDropdownOpen && (
-                  <ul className="absolute bg-white shadow-lg rounded-lg mt-2 w-48 transition duration-300 ease-in-out z-10"
+                  <ul className="absolute bg-white top-5 shadow-lg rounded-lg mt-2 w-48 transition duration-300 ease-in-out z-50"
                   
                   >
 
 
                     <li 
-                    // onMouseLeave={setIsDropdownOpen(false)}
                     >
                       <Link
                         to="/products/fiberGlass"
                         className="block px-4 py-3 text-gray-700 font-semibold hover:bg-red-500 hover:text-white transition-colors duration-200 ease-in-out rounded-t-lg"
-                      >
+                        >
                         Fiber Glass
                       </Link>
                     </li>
@@ -191,7 +183,7 @@ const Navbar = () => {
                       className="relative"
                       onMouseEnter={() => toggleSubmenu("diamant")}
                       onMouseLeave={handleSubmenuLeave}
-                    >
+                      >
                       <Link
                         to="/products/diamantColdWeldingMaterial"
                         className="block w-full text-left px-4 py-3 text-gray-700 font-semibold hover:bg-red-500 hover:text-white"
@@ -239,7 +231,7 @@ const Navbar = () => {
                             <Link
                               to="/products/diamantColdWeldingMaterial/plasticMetal"
                               className="block px-4 py-3 text-gray-700 font-semibold hover:bg-red-500 hover:text-white"
-                            >
+                              >
                               PlasticMetal
                             </Link>
                           </li>
@@ -292,7 +284,7 @@ const Navbar = () => {
                             <Link
                               to="/products/instrument/flowLine"
                               className="block px-4 py-3 text-gray-700 font-semibold hover:bg-red-500 hover:text-white"
-                            >
+                              >
                               Flow Line
                             </Link>
                           </li>
@@ -318,12 +310,11 @@ const Navbar = () => {
                   </ul>
                 )}
               </li>
-
               <li>
                 <Link
                   to="/projects"
                   className="text-gray-700 hover:text-red-500"
-                >
+                  >
                   Projects
                 </Link>
               </li>
