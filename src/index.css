@@ -1,0 +1,33 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+.custom-button {
+    background-color: #c8102e; /* Tailwind red-600 */
+    color: white;
+    font-size: 1.125rem; /* Tailwind text-lg */
+    padding: 0.5rem 0.75rem; /*Tailwind px-3 py-2 */
+    margin: 0 1.5rem; /* Tailwind mx-6 */
+    position: relative;
+    top: -0.5rem; /* Tailwind -top-2 */
+    border-radius: 9999px; /* Tailwind rounded-full */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: white;
+    color: #c8102e; /* Tailwind red-600 */
+    border: 1px solid #c8102e; /* Tailwind border-red-500 */
+}
