@@ -39,12 +39,12 @@ const Footer = () => {
           <div> 
             <h2 className="text-lg font-semibold mb-4 text-red-500"> <AccessTimeIcon/> Timings</h2>
             <ul className="space-y-2 text-sm">
-              <li>Monday : <span className='ml-7'>9 am - 6 pm</span></li>
-              <li>Tuesday : <span className='ml-7'>9 am - 6 pm</span></li>
-              <li>Wednesday : <span className='ml-2'>9 am - 6 pm</span></li>
-              <li>Thursday : <span className='ml-6'>9 am - 6 pm</span></li>
-              <li>Friday : <span className='ml-[42px]'>9 am - 6 pm</span></li>
-              <li>Saturday : <span className='ml-6'>9 am - 6 pm</span></li>
+              <li>Monday : <span className='ml-7'>9 am - 5 pm</span></li>
+              <li>Tuesday : <span className='ml-7'>9 am - 5 pm</span></li>
+              <li>Wednesday : <span className='ml-2'>9 am - 5 pm</span></li>
+              <li>Thursday : <span className='ml-6'>9 am - 5 pm</span></li>
+              <li>Friday : <span className='ml-[42px]'>9 am - 5 pm</span></li>
+              <li>Saturday : <span className='ml-6'>9 am - 2 pm</span></li>
               <li>Sunday  : <span className='ml-8'>Closed</span></li>
             </ul>
           </div>

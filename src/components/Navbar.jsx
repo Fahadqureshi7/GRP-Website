@@ -53,13 +53,16 @@ const Navbar = () => {
           </Link>
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 items-center mt-4 lg:mt-0">
             <div className="text-gray-700 flex items-center text-sm">
-              <LocalPhoneIcon className="mr-1 text-base" /> +924235707737-8
+             <a href="tel:+924235707737-8">
+               <LocalPhoneIcon className="mr-1 text-base" /> +924235707737-8
+              </a>
             </div>
             <div className="text-gray-700 flex items-center text-sm">
-              <PlaceIcon className="mr-1 text-base" /> 88-T, 1st Floor, Phase 2 DHA, Lahore
+              <a href="https://maps.app.goo.gl/QjqzHqDiEWkAjAyPA"><PlaceIcon className="mr-1 text-base" /> 88-T, 1st Floor, Phase 2 DHA, Lahore </a>
             </div>
             <div className="text-gray-700 flex items-center text-sm">
-              <EmailIcon className="mr-1 text-base" /> sale@grpengineers.com
+              <a href="mailto:sale@grpengineers.com"><EmailIcon className="mr-1 text-base" /> sale@grpengineers.com
+            </a>
             </div>
             <div className="flex space-x-2 sm:mt-0">
               <a
